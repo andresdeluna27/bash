@@ -8,9 +8,9 @@ for ((i=2; i<$n; i++)) do
 		let a=$a+1
 	fi
 done
-if [ "$a" -lt 2 ]; then
-	echo  es primo
-else
+if [ "$a" -ge 2 ] || [ "$n" -eq 2 ]; then
 	echo no es primo
+else
+	echo es primo
 fi
 }
